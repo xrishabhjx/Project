@@ -1,0 +1,116 @@
+/* Navbar container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: "Poppins", serif;
+    justify-content: space-around;
+    /* background-color: #fff; */
+
+    padding: 1rem 2rem;
+    /* box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); */
+    z-index: 1000;
+  }
+  
+  /* Wrapper to center the navbar content */
+  .navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px; /* Limit the width of content */
+    margin: 0 auto; /* Center the content horizontally */
+    width: 100%;
+  }
+  
+  /* Logo styling */
+  .navbar-logo a {
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    margin-right: 100px;
+  }
+  
+  /* Container for nav items and button */
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Navigation list */
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin: 0 1rem;
+  }
+  
+  .nav-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    font-family: "Poppins", serif;
+  }
+
+  /* Active link styling */
+.nav-list a.active {
+    color: #c40092;
+    font-weight: bold;
+  }
+    
+  .nav-list a:hover {
+    color: #c40092;
+  }
+  
+/* Button group styling */
+.button-group {
+  display: flex;
+  gap: 1rem; /* Space between buttons */
+}
+
+/* Get Started button */
+.get-started {
+  background-color: black;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-started:hover {
+  background-color: #c40092;
+}
+
+
+  /* Responsive navbar for smaller screens */
+  @media (max-width: 768px) {
+    .navbar-content {
+      flex-direction: column;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .nav-container {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .nav-list {
+      flex-direction: column;
+    }
+  
+    .nav-list li {
+      margin: 0.5rem 0;
+    }
+  }
+  
